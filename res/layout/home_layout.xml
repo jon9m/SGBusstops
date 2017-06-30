@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fd886b"
+    android:orientation="vertical"
+    tools:context=".HomeActivity" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="0.1dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/nearloc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0.1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bkg_anim"            
+            android:onClick="showNearLocations"
+            android:textStyle="bold"         
+            android:text="@string/near_locations" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0.1dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0.1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bkg_anim"
+            android:onClick="showBusStopsView"
+            android:textStyle="bold"
+            android:text="@string/search_busstops" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0.1dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/allbusservices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="0.1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bkg_anim"
+            android:onClick="showAllBusServices"
+            android:textStyle="bold"
+            android:text="@string/serachbusservices" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0.1dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/fromhere"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0.1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bkg_anim"
+            android:clickable="true"
+            android:onClick="showSettings"
+            android:text="@string/setting" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0.1dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/aboutme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_margin="0.1dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bkg_anim"
+            android:onClick="showAbout"
+            android:text="@string/aboutme" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">SG Bus Stops</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="service_details" translatable="false">Bus Service Details</string>
+    <string name="app_label" translatable="false">SGBusStops</string>
+    <string name="search_hint" translatable="false">Enter bus stop number or name</string>
+    <string name="title_activity_map" translatable="false">Bus Stop</string>
+    <string name="title_activity_bus_service" translatable="false">Bus route information</string>
+    <string name="bus_services_msg" translatable="false">Bus services available at&#8230; </string>
+    <string name="db_service_name" translatable="false">dDB Service</string>
+    <string name="title_activity_bus_route_map" translatable="false">Bus Routes</string>
+    <string name="title_activity_nearest_locations_map" translatable="false">Nearest Bus Stops</string>
+    <string name="near_locations" translatable="false">Nearby Bus Stops</string>
+    <string name="search_busstops" translatable="false">Find Bus Stops</string>
+    <string name="go_from_here" translatable="false">Go From Here</string>
+    <string name="aboutme" translatable="false">About</string>
+    <string name="setting" translatable="false">Settings</string>
+    <string name="bus_service_details" translatable="false">Bus Service Details</string>
+    <string name="loading" translatable="false">Loading&#8230;</string>
+    <string name="tapbusservices" translatable="false">TAP FOR BUS SERVICES</string>
+    <string name="you" translatable="false">You</string>
+    <string name="title_activity_all_bus_services" translatable="false">SG Bus Services</string>
+    <string name="serachbusservices" translatable="false">Find Bus Services</string>
+    <string name="all_service_search_hint" translatable="false">Enter service number or name</string>
+    <string name="title_activity_about" translatable="false">About</string>
+    <string name="looping" translatable="false">[LOOPING]</string>
+    <string name="about_title" translatable="false">SGBS</string>
+    <string name="about_email" translatable="false">E-mail : manojam79@gmail.com</string>
+    <string name="about_version" translatable="false">Version : 1.3</string>
+    <string name="title_activity_settings" translatable="false">Settings</string>
+    <string name="nearbylocrange" translatable="false">Nearby Bus Stops Range</string>
+
+</resources>

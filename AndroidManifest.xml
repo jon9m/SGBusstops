@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mmks.sgbusstops"
+    android:versionCode="8"
+    android:versionName="1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.mmks.sgbusstops.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/bus"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mmks.sgbusstops.activity.HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mmks.sgbusstops.activity.BusStopsActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.mmks.sgbusstops.activity.BusStopServicesActivity"
+            android:label="@string/bus_services_msg" >
+        </activity>
+        <activity
+            android:name="com.mmks.sgbusstops.activity.BusStopMapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+
+        <!-- PROD -->
+        <!-- android:value="AIzaSyD5K954vmZttoCm7j7eq4PJ4w2bA05-AzA" -->
+        <!-- Debug -->
+        <!-- AIzaSyBfSoaz1ud-dr5RCymxZRFXBDisD-kFVNQ -->
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBfSoaz1ud-dr5RCymxZRFXBDisD-kFVNQ" />
+
+        <activity
+            android:name="com.mmks.sgbusstops.activity.BusServiceActivity"
+            android:label="@string/title_activity_bus_service" >
+        </activity>
+
+        <service
+            android:name="com.mmks.sgbusstops.service.DBService"
+            android:label="@string/db_service_name"
+            android:process=":dbupdate_process" >
+        </service>
+
+        <activity
+            android:name="com.mmks.sgbusstops.activity.BusRouteMapActivity"
+            android:label="@string/title_activity_bus_route_map" >
+        </activity>
+        <activity
+            android:name="com.mmks.sgbusstops.activity.NearestLocationsMapActivity"
+            android:label="@string/title_activity_nearest_locations_map" >
+        </activity>
+        <activity
+            android:name="com.mmks.sgbusstops.activity.AllBusServicesActivity"
+            android:label="@string/title_activity_all_bus_services" >
+        </activity>
+        <activity
+            android:name="com.mmks.sgbusstops.activity.About"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.mmks.sgbusstops.activity.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+    </application>
+
+</manifest>
